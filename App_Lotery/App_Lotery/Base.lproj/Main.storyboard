@@ -29,13 +29,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2IA-Yk-pIG">
-                                <rect key="frame" x="142" y="151" width="131" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2IA-Yk-pIG">
+                                <rect key="frame" x="16" y="147" width="382" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Mega-Sena"/>
+                                    <segment title="Quina"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.39668507279999998" green="0.65104092339999997" blue="0.90005069969999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,9 +44,12 @@
                             <constraint firstItem="Nw2-Yy-ViC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3P5-6P-oIy"/>
                             <constraint firstItem="Nw2-Yy-ViC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Frd-ii-RhI"/>
                             <constraint firstItem="vYO-zN-WPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HXR-Fs-BUN"/>
+                            <constraint firstItem="2IA-Yk-pIG" firstAttribute="top" secondItem="Nw2-Yy-ViC" secondAttribute="bottom" constant="16" id="LHE-E2-D2H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vYO-zN-WPe" secondAttribute="trailing" constant="16" id="bSL-oN-dDv"/>
+                            <constraint firstItem="2IA-Yk-pIG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cHs-lx-hC4"/>
                             <constraint firstItem="Nw2-Yy-ViC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kAY-Bc-pk0"/>
                             <constraint firstItem="vYO-zN-WPe" firstAttribute="centerY" secondItem="Nw2-Yy-ViC" secondAttribute="centerY" id="ucl-Dg-qbD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2IA-Yk-pIG" secondAttribute="trailing" constant="16" id="yTm-bj-Mm2"/>
                         </constraints>
                     </view>
                 </viewController>
