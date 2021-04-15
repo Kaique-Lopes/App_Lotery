@@ -12,6 +12,18 @@ enum GameType: String {
     case quina = "Quina"
 }
 
+infix operator >-<
+func >-< (total: Int, universe: Int) -> [Int] {
+    var result: [Int] = []
+    while result.count < total {
+        let randomNumber = Int(arc4random_uniform(UInt32(universe))+1)
+        if result.contains(randomNumber){
+            result.append(randomNumber)
+        }
+    }
+    return result.sorted()
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var lbGameType: UILabel!
     @IBOutlet weak var scGameType: UISegmentedControl!
@@ -26,4 +38,3 @@ class ViewController: UIViewController {
     
 
 }
-
