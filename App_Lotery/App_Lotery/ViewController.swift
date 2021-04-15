@@ -40,8 +40,10 @@ class ViewController: UIViewController {
         switch type {
         case .megasena:
             game = 6>-<60
+            balls.last!.isHidden = false
         case .quina:
             game = 5>-<80
+            balls.last!.isHidden = true
         }
     }
     
