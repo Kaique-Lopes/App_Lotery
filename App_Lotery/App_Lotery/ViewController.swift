@@ -51,6 +51,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func generateGame() {
+        switch scGameType.selectedSegmentIndex {
+        case 0:
+            showNumbers(for: .megasena)
+        default:
+            showNumbers(for: .quina)
+        }
     }
     
 
