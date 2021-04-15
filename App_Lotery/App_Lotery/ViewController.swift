@@ -45,6 +45,9 @@ class ViewController: UIViewController {
             game = 5>-<80
             balls.last!.isHidden = true
         }
+        for (index, game) in game.enumerated() {
+            balls[index].setTitle("\(game)", for: .normal)
+        }
     }
     
     @IBAction func generateGame() {
