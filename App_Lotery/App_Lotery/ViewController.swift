@@ -31,6 +31,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showNumbers(for: .megasena)
+    }
+    
+    func showNumbers(for type: GameType) {
+        lbGameType.text = type.rawValue
+        var game: [Int] = []
+        switch type {
+        case .megasena:
+            game = 6>-<60
+        case .quina:
+            game = 5>-<80
+        }
     }
     
     @IBAction func generateGame() {
